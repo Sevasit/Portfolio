@@ -12,7 +12,7 @@ const Project = () => {
 
   return (
     <section
-      data-aos="fade-in"
+      data-aos="fade-in fghf"
       data-aos-delay="200"
       className="flex items-center justify-center min-h-screen container mx-auto text-white"
     >
