@@ -21,8 +21,8 @@ const Comment = (props) => {
           </div>
         ))
       ) : (
-        <div className="h-[250px] w-[700px] mx-auto bg-slate-600 m-5 p-2 rounded-md flex justify-center items-center">
-          <p className="text-2xl text-center text-slate-100 font-bold">
+        <div className="h-[200px] w-[200px] lg:h-[250px] lg:w-[700px] mx-auto bg-slate-600 m-5 p-2 rounded-md flex justify-center items-center">
+          <p className="lg:text-2xl text-center text-slate-100 font-bold">
             Found no comments.
           </p>
         </div>

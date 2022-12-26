@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import { Switch } from "react-router-dom";
+import { Switch, Redirect } from "react-router-dom";
 import { Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
@@ -16,6 +16,9 @@ const App = (props) => {
       <main>
         <Switch>
           <Route path="/" exact>
+            <Redirect to="/Home" />
+          </Route>
+          <Route path="/Home" exact>
             <Hero />
           </Route>
           <Route path="/About">
