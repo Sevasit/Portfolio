@@ -57,21 +57,29 @@ const Navbar = () => {
         >
           <ul className="uppercase p-4">
             <li className="p-4 border-b border-gray-600 hover:text-red-400 hover:border-b-2 hover:border-red-400">
-              <NavLink to="/" exact>
+              <NavLink onClick={navHandler} to="/" exact>
                 Home
               </NavLink>
             </li>
             <li className="p-4 border-b border-gray-600 hover:text-red-400 hover:border-b-2 hover:border-red-400">
-              <NavLink to="/About">About</NavLink>
+              <NavLink onClick={navHandler} to="/About">
+                About
+              </NavLink>
             </li>
             <li className="p-4 border-b border-gray-600 hover:text-red-400 hover:border-b-2 hover:border-red-400">
-              <NavLink to="/Skills">Skills</NavLink>
+              <NavLink onClick={navHandler} to="/Skills">
+                Skills
+              </NavLink>
             </li>
             <li className="p-4 border-b border-gray-600 hover:text-red-400 hover:border-b-2 hover:border-red-400">
-              <NavLink to="/Project">Project</NavLink>
+              <NavLink onClick={navHandler} to="/Project">
+                Project
+              </NavLink>
             </li>
             <li className="p-4 border-b border-gray-600 hover:text-red-400 hover:border-b-2 hover:border-red-400">
-              <NavLink to="/Contact">Contact</NavLink>
+              <NavLink onClick={navHandler} to="/Contact">
+                Contact
+              </NavLink>
             </li>
           </ul>
         </div>

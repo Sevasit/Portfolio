@@ -12,6 +12,59 @@ import Tailwind from "../../assets/Tailwind.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+const skills = [
+  {
+    id: "1",
+    photo: Html,
+    title: "Html",
+  },
+  {
+    id: "2",
+    photo: Css,
+    title: "Css",
+  },
+  {
+    id: "3",
+    photo: Javascript,
+    title: "Javascript",
+  },
+  {
+    id: "4",
+    photo: TypeScript,
+    title: "TypeScript",
+  },
+  {
+    id: "5",
+    photo: Java,
+    title: "Basic Java",
+  },
+  {
+    id: "6",
+    photo: Php,
+    title: "Basic Php",
+  },
+  {
+    id: "7",
+    photo: ReactPT,
+    title: "React",
+  },
+  {
+    id: "8",
+    photo: ReduxPT,
+    title: "Redux",
+  },
+  {
+    id: "9",
+    photo: Node,
+    title: "Basic Node Js",
+  },
+  {
+    id: "10",
+    photo: Tailwind,
+    title: "Tailwind Css",
+  },
+];
+
 const Skills = () => {
   useEffect(() => {
     AOS.init();
@@ -21,89 +74,23 @@ const Skills = () => {
     <section
       data-aos="fade-in"
       data-aos-delay="200"
-      className="max-w-[1500px] h-[1500px] lg:h-screen mx-auto text-center flex flex-col justify-center"
+      className="max-w-[1500px] h-[1500px] md:h-[800px] lg:h-screen mx-auto text-center flex flex-col justify-center"
     >
       <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-4 text-center py8 lg:text-2xl py-2">
-        <div className="shadow-lg shadow-slate-700 hover:scale-110 duration-500 text-gray-500 hover:text-red-400">
-          <img
-            className="max-w-[125px] lg:max-w-[250px] mx-auto"
-            src={Html}
-            alt=""
-          />
-          <p className="my-4 ">Html</p>
-        </div>
-        <div className="shadow-lg shadow-slate-700 hover:scale-110 duration-500 text-gray-500 hover:text-red-400">
-          <img
-            className="max-w-[125px] lg:max-w-[250px] mx-auto"
-            src={Css}
-            alt=""
-          />
-          <p className="my-4 ">Css</p>
-        </div>
-        <div className="shadow-lg shadow-slate-700 hover:scale-110 duration-500 text-gray-500 hover:text-red-400">
-          <img
-            className="max-w-[125px] lg:max-w-[250px] mx-auto"
-            src={Javascript}
-            alt=""
-          />
-          <p className="my-4 ">Javascript</p>
-        </div>
-        <div className="shadow-lg shadow-slate-700 hover:scale-110 duration-500 text-gray-500 hover:text-red-400">
-          <img
-            className="max-w-[125px] lg:max-w-[250px] mx-auto"
-            src={TypeScript}
-            alt=""
-          />
-          <p className="my-4 ">TypeScript</p>
-        </div>
-        <div className="shadow-lg shadow-slate-700 hover:scale-110 duration-500 text-gray-500 hover:text-red-400">
-          <img
-            className="max-w-[125px] lg:max-w-[250px] mx-auto"
-            src={Java}
-            alt=""
-          />
-          <p className="my-4 ">Basic Java</p>
-        </div>
-        <div className="shadow-lg shadow-slate-700 hover:scale-110 duration-500 text-gray-500 hover:text-red-400">
-          <img
-            className="max-w-[125px] lg:max-w-[250px] mx-auto"
-            src={Php}
-            alt=""
-          />
-          <p className="my-4 ">Basic PHP</p>
-        </div>
-        <div className="shadow-lg shadow-slate-700 hover:scale-110 duration-500 text-gray-500 hover:text-red-400">
-          <img
-            className="max-w-[125px] lg:max-w-[250px] mx-auto"
-            src={ReactPT}
-            alt=""
-          />
-          <p className="my-4 ">React JS</p>
-        </div>
-        <div className="shadow-lg shadow-slate-700 hover:scale-110 duration-500 text-gray-500 hover:text-red-400">
-          <img
-            className="max-w-[125px] lg:max-w-[250px] mx-auto"
-            src={ReduxPT}
-            alt=""
-          />
-          <p className="my-4 ">Redux</p>
-        </div>
-        <div className="shadow-lg shadow-slate-700 hover:scale-110 duration-500 text-gray-500 hover:text-red-400">
-          <img
-            className="max-w-[125px] lg:max-w-[250px] mx-auto"
-            src={Node}
-            alt=""
-          />
-          <p className="my-4 ">Basic Node JS</p>
-        </div>
-        <div className="shadow-lg shadow-slate-700 hover:scale-110 duration-500 text-gray-500 hover:text-red-400">
-          <img
-            className="max-w-[125px] lg:max-w-[250px] mx-auto"
-            src={Tailwind}
-            alt=""
-          />
-          <p className="my-4 ">Tailwind CSS</p>
-        </div>
+        {skills.map((skill) => (
+          <div
+            key={skill.id}
+            className="shadow-lg shadow-slate-700 hover:scale-110 duration-500 text-gray-500 hover:text-red-400"
+          >
+            <img
+              className="max-w-[125px] lg:max-w-[250px] mx-auto"
+              src={skill.photo}
+              alt=""
+            />
+            <p className="my-4 ">{skill.title}</p>
+          </div>
+        ))}
+        ;
       </div>
     </section>
   );

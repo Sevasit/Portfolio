@@ -31,21 +31,33 @@ const Footer = () => {
 
         <div className="mx-auto">
           <div className="flex space-x-4">
-            <a href="https://github.com/Sevasit?tab=repositories">
+            <a
+              href="https://github.com/Sevasit?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillGithub
-                className="cursor-pointer stroke-1 hover:stroke-2"
+                className="cursor-pointer stroke-1 duration-500 hover:text-red-400"
                 size={35}
               />
             </a>
-            <a href="https://www.facebook.com/new.sevasit">
+            <a
+              href="https://www.facebook.com/new.sevasit"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillFacebook
-                className="cursor-pointer stroke-1 hover:stroke-2"
+                className="cursor-pointer stroke-1 duration-500 hover:text-red-400"
                 size={35}
               />
             </a>
-            <a href="https://www.instagram.com/sevasit_g.new/">
+            <a
+              href="https://www.instagram.com/sevasit_g.new/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillInstagram
-                className="cursor-pointer stroke-1 hover:stroke-2"
+                className="cursor-pointer stroke-1 duration-500 hover:text-red-400"
                 size={35}
               />
             </a>

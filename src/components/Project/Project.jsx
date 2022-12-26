@@ -16,7 +16,7 @@ const Project = () => {
       data-aos-delay="200"
       className="flex items-center justify-center min-h-screen container mx-auto text-white"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
         <div className="card">
           <div className="p-5 flex flex-col">
             <div className="rounded-xl overflow-hidden flex justify-center items-center">
@@ -36,7 +36,7 @@ const Project = () => {
             </p>
             <button className="transition duration-500  border-2 text-white w-[150px] rounded-md mx-auto mt-5 py-1 font-medium hover:bg-red-400 hover:text-black hover:border-black">
               <a
-                href="https://github.com/Sevasit?tab=repositories"
+                href="https://github.com/Sevasit/IslandTH-Project"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -65,7 +65,7 @@ const Project = () => {
             </p>
             <button className="transition duration-500  border-2 text-white w-[150px] rounded-md mx-auto mt-5 py-1 font-medium hover:bg-red-400 hover:text-black hover:border-black">
               <a
-                href="https://github.com/Sevasit?tab=repositories"
+                href="https://github.com/Sevasit/RealtimeChat"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -94,7 +94,7 @@ const Project = () => {
             </p>
             <button className="transition duration-500  border-2 text-white w-[150px] rounded-md mx-auto mt-5 py-1 font-medium hover:bg-red-400 hover:text-black hover:border-black">
               <a
-                href="https://github.com/Sevasit?tab=repositories"
+                href="https://github.com/Sevasit/App-FifaKub"
                 target="_blank"
                 rel="noreferrer"
               >
