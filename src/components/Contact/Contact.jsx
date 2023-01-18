@@ -14,7 +14,7 @@ const Contact = () => {
   const fetchComments = async () => {
     try {
       const response = await fetch(
-        "https://registerapp-5fe8c-default-rtdb.firebaseio.com/comments.json"
+        <<Your firebase>>
       );
 
       if (!response.ok) {
@@ -50,7 +50,7 @@ const Contact = () => {
     setError(null);
     try {
       const response = await fetch(
-        "https://registerapp-5fe8c-default-rtdb.firebaseio.com/comments.json",
+        <<Your firebase>>,
         {
           method: "POST",
           body: JSON.stringify(dataForm),
